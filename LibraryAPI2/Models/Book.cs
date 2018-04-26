@@ -12,7 +12,7 @@ namespace LibraryAPI2.Models
         public string YearPublished { get; set; }
         public string Condition { get; set; }
         public bool IsCheckedOut { get; set; } = false;
-        public DateTime DueBackDate { get; set; } = DateTime.Now.AddDays(10);
+        public DateTime? DueBackDate { get; set; } = DateTime.Now.AddDays(10);
 
         //Foreign Keys:
 
