@@ -193,6 +193,10 @@
     <Compile Include="Migrations\201804262010288_Creating-Books-Authors-Genres.Designer.cs">
       <DependentUpon>201804262010288_Creating-Books-Authors-Genres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804262020382_Added-CheckoutLedgers.cs" />
+    <Compile Include="Migrations\201804262020382_Added-CheckoutLedgers.Designer.cs">
+      <DependentUpon>201804262020382_Added-CheckoutLedgers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
@@ -271,6 +275,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804262010288_Creating-Books-Authors-Genres.resx">
       <DependentUpon>201804262010288_Creating-Books-Authors-Genres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804262020382_Added-CheckoutLedgers.resx">
+      <DependentUpon>201804262020382_Added-CheckoutLedgers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
