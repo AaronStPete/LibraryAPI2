@@ -189,6 +189,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="LibraryContext\LibraryContext.cs" />
+    <Compile Include="Migrations\201804262010288_Creating-Books-Authors-Genres.cs" />
+    <Compile Include="Migrations\201804262010288_Creating-Books-Authors-Genres.Designer.cs">
+      <DependentUpon>201804262010288_Creating-Books-Authors-Genres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
@@ -262,6 +266,11 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201804262010288_Creating-Books-Authors-Genres.resx">
+      <DependentUpon>201804262010288_Creating-Books-Authors-Genres.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
