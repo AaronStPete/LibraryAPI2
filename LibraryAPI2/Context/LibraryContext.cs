@@ -5,7 +5,7 @@ using System.Web;
 using System.Data.Entity;
 using LibraryAPI2.Models;
 
-namespace LibraryAPI2.LibraryContext
+namespace LibraryAPI2.Context
 {
     public class LibraryContext:DbContext
     {

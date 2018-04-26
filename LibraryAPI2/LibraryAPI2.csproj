@@ -183,12 +183,13 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\BookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="LibraryContext\LibraryContext.cs" />
+    <Compile Include="Context\LibraryContext.cs" />
     <Compile Include="Migrations\201804262010288_Creating-Books-Authors-Genres.cs" />
     <Compile Include="Migrations\201804262010288_Creating-Books-Authors-Genres.Designer.cs">
       <DependentUpon>201804262010288_Creating-Books-Authors-Genres.cs</DependentUpon>
