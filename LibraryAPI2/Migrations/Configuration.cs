@@ -5,14 +5,14 @@ namespace LibraryAPI2.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<LibraryAPI2.LibraryContext.LibraryContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<LibraryAPI2.Context.LibraryContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(LibraryAPI2.LibraryContext.LibraryContext context)
+        protected override void Seed(LibraryAPI2.Context.LibraryContext context)
         {
             //  This method will be called after migrating to the latest version.
 
