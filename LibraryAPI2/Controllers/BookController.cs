@@ -19,6 +19,7 @@ namespace LibraryAPI2.Controllers
             {
                 var query = db.Books.Include(i => i.Author).Include(i => i.Genre);
 
+
                 if (!String.IsNullOrEmpty(title))
                 {
                     query = query.Where(w => w.Title.ToLower().Contains(title.ToLower()));
@@ -40,13 +41,25 @@ namespace LibraryAPI2.Controllers
                 {
                     return NotFound();
                 }
+
                 else
                 {
                     return Ok(results);
                 }
 
             }
-
         }
+
+        [HttpGet, Route("API/Status")]
+        public IHttpActionResult GetAllCheckedIn()
+        {
+            using (var db = new LibraryContext())
+            {
+                var query = db.Books.AsQueryable();
+                query = query.Where(w => w.IsCheckedOut == false);
+                return Ok(query.ToList());
+            }
+        }
+
     }
 }
